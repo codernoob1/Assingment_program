@@ -21,7 +21,7 @@ int main(){
     
     printf("\nBefore Sorting : ");
     printArray(arr,n);
-    selectionSort(arr, n);
+    insertionSort(arr, n);
     printf("Sorted array: \n");
     printArray(arr, n);
     
@@ -33,7 +33,7 @@ int *mem_alloc(int a){
     return p;
 }
 
-void selectionSort(int arr[],int n){
+void insertionSort(int arr[],int n){
     int i,j;
     for(i = 1;i <n;i++){
         int key = arr[i];
